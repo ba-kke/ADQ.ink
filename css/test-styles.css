@@ -1,0 +1,233 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+:root {
+  --font-color-1: #000;
+  --main-color: #ff7f50;
+  --main-background-color: #fce2b1;
+  --base-color: #fff;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+a{
+  color:var(--font-color-1);
+  text-decoration:none;
+  font-weight: bold;
+}
+
+.container{
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+header{
+  width:100%;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--base-color);
+  box-shadow: 5px 0 10px 10px var(--main-background-color);
+}
+
+header > .container{
+  height:8rem;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+/* ロゴ */
+.logo img{
+  height: 6rem;
+}
+
+/* ヘッダーナビ */
+.header-nav li{
+  display: inline-block;
+  padding:0 2rem;
+  list-style: none;
+}
+
+.header-nav a {
+  display: inline-block;
+  font-size: 1.4rem;
+  color:var(--font-color-1);
+  position: relative;
+  text-decoration: none;
+  line-height: 4rem;
+}
+
+.header-nav a::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: var(--font-color-1);
+  transform: scale(1, 1);
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+
+.header-nav a:hover::before{
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+
+.header-nav a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: var(--main-color);
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+
+.header-nav a:hover::after{
+  transform: scale(1, 1);
+  transform-origin: left top;
+}
+
+.fa-angle-down {
+  margin-left: 1rem;
+}
+
+/* トップビュー */
+.top-view{
+  background:url() no-repeat bottom center;
+  background-size:cover;
+}
+
+.top-view > .container{
+  height:70rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.top-view video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url('poster.jpg') no-repeat;
+  background-size: cover;
+ }
+
+ .top-view .ttls{
+  position: relative; /*必ず必要*/
+  z-index: 2; /*必ず必要*/
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  margin: auto;
+ }
+
+.top-view .sub-ttl{
+  color:var(--font-color-1);
+  letter-spacing:0.4rem;
+  margin:2rem 0 0;
+  padding:0 0 0 4rem;
+  position:relative;
+}
+
+/* エリアフォーム */
+[class*="area_home"]{
+  padding:8rem 0 12rem;
+}
+
+/* ヘッド */
+.head_home{
+  display:flex;
+  justify-content:center;
+}
+.head_home .ttl{
+  padding:0 0 1.5rem;
+  position:relative;
+}
+
+.head_home .ttl:after{
+  content:"";
+  display:block;
+  width:100%;
+  height:0.5rem;
+  background:var(--main-color);
+  position:absolute;
+  top:3.5rem;
+  left:0;
+}
+
+/* 2分割レイアウト */
+.layout_2_div{
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+  margin: 0 -4rem;
+}
+
+.layout_2_div > div{
+  width:50%;
+  padding:0 4rem;
+}
+
+.layout_2_div img{
+  width:40rem;
+  max-height:47.6rem;
+}
+
+/* テキストホーム */
+.text_home .ttl{
+  margin:0 0 2rem;
+}
+
+.text_home .description{
+}
+
+.text_home .btnarea{
+
+}
+
+/* キャスティング */
+.area_home_casting{
+  background:var(--main-background-color);
+}
+
+.area_home_casting img{
+  frasform:scale(1.1);
+  transform-origin: center center;
+}
+
+/* フッター */
+footer{
+  background:var(--font-color-1);
+  color:var(--base-color);
+}
+footer > .wrapper{
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper{
+  margin:3rem 0 0;
+}
