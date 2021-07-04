@@ -126,6 +126,10 @@ header > .container{
   object-fit: contain;
  }
 
+ .top-view img {
+   min-width: 100%;
+ }
+
  .top-view .ttls{
   position: fixed;
   right: 0;
