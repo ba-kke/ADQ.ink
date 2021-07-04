@@ -171,6 +171,53 @@ header > .container{
   margin-bottom: -1px;
 }
 
+.anim-box-1 {
+  animation: slideIn-odd 3s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+.anim-box-2 {
+  animation: slideIn-even  3s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
+.anim-box-3 {
+  animation: slideIn-odd 3s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  animation-delay: 3.5s;
+  opacity: 0;
+}
+.anim-box-4 {
+  animation: slideIn-even  3s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  animation-delay: 4.5s;
+  opacity: 0;
+}
+
+@keyframes slideIn-odd {
+  0% {
+    transform: translateX(180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn-even {
+  0% {
+    transform: translateX(-180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+
 .service .container {
   display: flex;
   flex-direction: column;
