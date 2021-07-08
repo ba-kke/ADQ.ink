@@ -116,14 +116,14 @@ header > .container{
   align-items:center;
   justify-content:center;
   margin: 0 auto;
+  position: relative;
 }
 
 .top-view video{
-  position: fixed;
+  position: absolute;
   right: 0;
-  top: 8rem;
+  top: 0;
   min-width: 100%;
-  width: auto;
   height: auto;
   z-index: -100;
   object-fit: contain;
@@ -158,6 +158,34 @@ header > .container{
   padding-left:4rem;
   font-size: 2rem;
   color:var(--base-color);
+}
+
+.service-ttl-wrapper {
+  padding-top: 10rem;
+  height: 20rem;
+  background-color: var(--base-color);
+}
+
+.service-ttl-wrapper .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-ttl {
+  display: inline;
+  font-size: 5rem;
+  line-height: 10rem;
+}
+
+.service-ttl::after {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: var(--main-color);
 }
 
 /* コンテンツs */
