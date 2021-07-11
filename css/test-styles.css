@@ -250,7 +250,7 @@ header > .container{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 35rem;
+  height: 60px;
 }
 
 .service .content {
