@@ -313,6 +313,7 @@ footer{
   height: 20rem;
   background-color:var(--font-color-1);
   color:var(--base-color);
+  transform: translate3d(0,0,0);
 }
 footer > .wrapper{
   height: 100%;
@@ -320,14 +321,6 @@ footer > .wrapper{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.under-hide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 99%;
-  left: 0;
 }
 
 @media screen and (max-width:780px) {
