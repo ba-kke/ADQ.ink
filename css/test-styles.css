@@ -349,12 +349,12 @@ footer > .wrapper{
   }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
   :root {
     font-size: 50%;
   }
 
   .header-nav li{
-    padding:0 0.5rem;
+    padding:0;
   }
 }
