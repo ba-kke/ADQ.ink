@@ -54,7 +54,7 @@ header{
 }
 
 header > .container{
-  height:8rem;
+  height:7rem;
   display:flex;
   justify-content: space-between;
   align-items:center;
@@ -134,27 +134,27 @@ a.now-page::after {
 /* トップビュー */
 
 .top-container {
-  margin-top: 8rem;
+  margin-top: 7rem;
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
 }
 
 .top-view video {
   position: fixed;
   z-index: -100;
   left: 0;
-  top: 8rem;
+  top: 7rem;
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   object-fit: cover;
  }
 
  .top-view .ttls{
   position: fixed;
   left: 0;
-  top: 8rem;
+  top: 7rem;
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   z-index: -99;
   display: flex;
   flex-direction: column;
@@ -354,13 +354,4 @@ footer > .wrapper{
     font-size: 55%;
   }
 
-  .top-container {
-    height: 50vh;
-  }
-  .top-view video {
-    height: 50vh;
-  }
- .top-view .ttls{
-  height: 50vh;
-  }
 }
