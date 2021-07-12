@@ -25,6 +25,10 @@ html { box-sizing: border-box; }
   margin: 0 auto;
 }
 
+body {
+  background-color: var(--base-color);
+}
+
 /* アニメーション */
 .marker-animation.active{
   background-position: -100% 1.3em;
