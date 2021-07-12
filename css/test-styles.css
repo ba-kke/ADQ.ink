@@ -170,7 +170,7 @@ a.now-page::after {
 }
 
 .top-view .ttl {
-  font-size: min(6vw,5rem);
+  font-size: min(5.5vw,5rem);
  }
 
 .top-view .ttl .emphasis {
