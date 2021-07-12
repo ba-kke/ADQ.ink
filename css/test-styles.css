@@ -20,6 +20,10 @@ html { box-sizing: border-box; }
   border: none;
 }
 
+body {
+  font-family: 'IM Fell DW Pica SC', serif;
+}
+
 .container{
   width: 80%;
   margin: 0 auto;
@@ -62,7 +66,7 @@ header > .container{
 
 /* ロゴ */
 .logo img{
-  height: 6rem;
+  height: 5rem;
 }
 
 /* ヘッダーナビ */
@@ -169,10 +173,13 @@ a.now-page::after {
   font-size: min(6vw,5rem);
  }
 
+.top-view .ttl .emphasis {
+  color: var(--main-color);
+}
+
 .top-view .sub-ttl{
   text-align: center;
   letter-spacing: 0.4vw;
-  margin-top:2rem;
   font-size: min(3.5vw,3rem);
   color:var(--base-color);
 }
