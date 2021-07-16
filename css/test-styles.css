@@ -1,146 +1,7 @@
-@charset "utf-8";
-
-:root {
-  --header-shadow: rgba(0,0,0,0.4);
-  --font-color-1: #000;
-  --font-color-2: #fff;
-  --main-color: rgb(200,45,35);
-  --main-background-color: #fce2b1;
-  /* --base-color: #000; */
-  --base-color: #fff;
-  font-size: 70.5%;
-}
-
-html { box-sizing: border-box; }
-
-*, *:before, *:after { box-sizing: inherit; }
-
-* {
-  margin: 0;
-  padding: 0;
-  line-height: 100%;
-  border: none;
-}
-
-body {
-  font-family: 'IM Fell DW Pica SC', serif;
-}
-
-.container{
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* アニメーション */
-.marker-animation.active{
-  background-position: -100% 1.3em;
-}
-
-.marker-animation {
-  background-image: -webkit-linear-gradient(left, transparent 50%, rgb(200,45,35) 50%);
-  background-image: -moz-linear-gradient(left, transparent 50%, rgb(200,45,35) 50%);
-  background-image: -ms-linear-gradient(left, transparent 50%, rgb(200,45,35) 50%);
-  background-image: -o-linear-gradient(left, transparent 50%, rgb(200,45,35) 50%);
-  background-image: linear-gradient(left, transparent 50%, rgb(200,45,35) 50%);
-  background-repeat: repeat-x;
-  background-size: 200% .2em;
-  background-position: 0 1.3em;
-  transition: all 0.7s ease-in-out 0.7s;
-}
-
-/* ヘッダー */
-header{
-  width:100%;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  background-color: var(--base-color);
-  box-shadow: 5px 0 10px 10px var(--header-shadow);
-}
-
-header > .container{
-  height:7rem;
-  display:flex;
-  justify-content: space-between;
-  align-items:center;
-}
-
-/* ロゴ */
-.logo img{
-  height: 5rem;
-}
-
-/* ヘッダーナビ */
-.header-nav li{
-  display: inline-block;
-  padding:0 2rem;
-  list-style: none;
-}
-
-.header-nav a {
-  display: inline-block;
-  font-size: 1.4rem;
-  color:var(--font-color-1);
-  position: relative;
-  text-decoration: none;
-  line-height: 4rem;
-  font-weight: bold;
-}
-
-.header-nav a::before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 3px;
-  background: var(--font-color-1);
-  transform: scale(1, 1);
-  transform-origin: right top;
-  transition: transform 0.3s;
-}
-
-.header-nav a:hover::before{
-  transform: scale(0, 1);
-  transform-origin: left top;
-}
-
-.header-nav a::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 3px;
-  background: var(--main-color);
-  transform: scale(0, 1);
-  transform-origin: right top;
-  transition: transform 0.3s;
-}
-
-.header-nav a:hover::after{
-  transform: scale(1, 1);
-  transform-origin: left top;
-}
-
-a.now-page::before {
-  background: var(--main-color);
-}
-
-a.now-page::after {
-  background: var(--font-color-1);
-}
-
-
-.fa-angle-down {
-  margin-left: 1rem;
-}
-
 /* トップビュー */
 
 .top-container {
-  margin-top: 7rem;
+  padding-top: 7rem;
   width: 100vw;
   height: 100vh;
 }
@@ -173,6 +34,7 @@ a.now-page::after {
 
 .top-view .ttl {
   font-size: min(5.5vw,5rem);
+  margin: 0 0 2rem;
  }
 
 .top-view .ttl .emphasis {
@@ -311,21 +173,6 @@ a.now-page::after {
 .effect-fade.effect-scroll {
   opacity: 1;
   transform: translate(0, 0);
-}
-
-/* フッター */
-footer{
-  height: 20rem;
-  background-color:var(--font-color-1);
-  color:var(--font-color-2);
-  -webkit-transform: translate3d(0,0,0);
-}
-footer > .wrapper{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 @media screen and (max-width:780px) {

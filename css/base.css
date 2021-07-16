@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+:root {
+  --header-shadow: rgba(0,0,0,0.4);
+  --font-color-1: #000;
+  --font-color-2: #fff;
+  --main-color: rgb(200,45,35);
+  --main-background-color: #fce2b1;
+  /* --base-color: #000; */
+  --base-color: #fff;
+  font-size: 70.5%;
+}
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  border: none;
+}
+
+body {
+  font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}

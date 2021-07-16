@@ -1,0 +1,14 @@
+/* フッター */
+footer{
+  height: 20rem;
+  background-color:var(--font-color-1);
+  color:var(--font-color-2);
+  -webkit-transform: translate3d(0,0,0);
+}
+footer > .wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
