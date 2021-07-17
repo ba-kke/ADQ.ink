@@ -39,7 +39,6 @@ main {
 
 .company .content li {
   font-size: 2rem;
-  line-height: 1.6;
 }
 
 .company .content li:not(:last-of-type) {
@@ -50,9 +49,18 @@ main {
   vertical-align: top;
   display: inline-block;
   width: 14rem;
+  line-height: 1.6;
 }
 
 .company .content p {
   vertical-align: top;
   display: inline-block;
+  line-height: 1.6;
+}
+
+.company .content a {
+  color: var(--bace-color);
+  vertical-align: top;
+  text-decoration: none;
+  line-height: 1.6;
 }
