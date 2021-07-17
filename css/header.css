@@ -86,3 +86,9 @@ a.now-page::after {
 .fa-angle-down {
   margin-left: 1rem;
 }
+
+@media screen and (max-width:520px) {
+  .header-nav li{
+    padding:0;
+  }
+}

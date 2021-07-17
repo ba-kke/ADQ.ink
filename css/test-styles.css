@@ -80,10 +80,10 @@
   background: var(--main-color);
 }
 
-/* コンテンツs */
+/* サービスコンテンツs */
 .service {
   width: 100%;
-  padding: 5rem;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +113,9 @@
 }
 
 .service .content-left {
-  width: 55%;
+  height: 100%;
+  width: 60rem;
+  max-width: 55%;
   border-radius: 10px;
 }
 
@@ -127,15 +129,17 @@
 
 .odd .content-right {
   padding: 0 2rem 0 10rem;
+  padding-left: max(3%);
 }
 
 .even .content-right {
   padding: 0 10rem 0 2rem;
+  padding-right: max(3%);
 }
 
 .service .ttl {
   text-align: left;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--font-color-1);
   padding-bottom: 2rem;
 }
@@ -175,14 +179,7 @@
   transform: translate(0, 0);
 }
 
-@media screen and (max-width:780px) {
-  :root {
-  font-size: 72.5%;
-  }
-
-  .container{
-    width: 85%;
-  }
+@media screen and (max-width:1000px) {
 
   .service-wrapper {
     padding: 5rem 0;
@@ -203,15 +200,5 @@
   .service .content-right {
     width: 100%;
     padding: 5rem 0;
-  }
-}
-
-@media screen and (max-width:450px) {
-  :root {
-    font-size: 55%;
-  }
-
-  .header-nav li{
-    padding:0;
   }
 }
