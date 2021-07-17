@@ -111,7 +111,6 @@
 }
 
 .service .content-left {
-  height: 100%;
   width: 60rem;
   max-width: 55%;
   border-radius: 10px;
@@ -165,8 +164,8 @@
     flex-direction: column;
   }
 
-  .service .content-left {
-    width: 100%;
+  .service img.content-left {
+    max-width: 100%;
   }
 
   .service .content-right {
