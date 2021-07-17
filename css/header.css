@@ -89,6 +89,6 @@ a.now-page::after {
 
 @media screen and (max-width:520px) {
   .header-nav li{
-    padding:0;
+    padding:0.5rem;
   }
 }
