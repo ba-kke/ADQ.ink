@@ -1,9 +1,12 @@
 /* トップビュー */
 
+.top-view {
+  transform:translate3d(0,0,0);
+}
+
 .top-container {
   width: 100vw;
   height: calc(100vh - 7rem);
-  transform: translate3d(0,0,0);
 }
 
 .top-view video {
