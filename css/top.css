@@ -1,4 +1,8 @@
 /* トップビュー */
+
+.top-view {
+  padding-top: 7rem;
+}
 .top-container {
   width: 100vw;
   height: calc(100vh - 7rem);
