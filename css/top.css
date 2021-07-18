@@ -2,6 +2,7 @@
 .top-container {
   width: 100vw;
   height: 100vh;
+  translate: 3d(0,0,0);
 }
 
 .top-view video {
