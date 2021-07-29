@@ -115,6 +115,7 @@
   width: 60rem;
   max-width: 55%;
   border-radius: 10px;
+  box-shadow: 2px 4px 8px black;
 }
 
 .service .content-right {
