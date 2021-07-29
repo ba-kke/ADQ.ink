@@ -30,7 +30,7 @@ header > .container{
 
 .header-nav a {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: min(1.4rem, 3vw);
   color:var(--font-color-1);
   position: relative;
   text-decoration: none;
@@ -91,6 +91,6 @@ a.now-page::after {
 
 @media screen and (max-width:520px) {
   .header-nav li{
-    padding:0.5rem;
+    padding:0.3rem;
   }
 }

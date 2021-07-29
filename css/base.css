@@ -32,7 +32,7 @@ body {
 
 @media screen and (max-width:960px) {
 
-  :root {
+  html {
   font-size: 72.5%;
   }
 
@@ -44,7 +44,7 @@ body {
 
 @media screen and (max-width:520px) {
 
-  :root {
-    font-size: 45%;
+  html {
+    font-size: 55%;
   }
 }

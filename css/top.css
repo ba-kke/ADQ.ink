@@ -141,11 +141,12 @@
 
 .service .ttl {
   text-align: left;
-  font-size: 2.5rem;
+  font-size: min(2.5rem, 7vw);
   font-weight: 900;
   color: var(--font-color-1);
   padding-bottom: 2rem;
   text-shadow: 2px 4px 2px #aaa;
+  white-space: nowrap;
 }
 
 .service .description {
