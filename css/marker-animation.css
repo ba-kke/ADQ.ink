@@ -1,6 +1,6 @@
 /* アニメーション */
 .marker-animation.active{
-  background-position: -100% 1.3em;
+  background-position: -100% 1.5em;
 }
 
 .marker-animation {
@@ -11,6 +11,6 @@
   background-image: linear-gradient(left, transparent 50%, rgb(200,45,35) 50%);
   background-repeat: repeat-x;
   background-size: 200% .2em;
-  background-position: 0 1.3em;
+  background-position: 0 1.5em;
   transition: all 0.7s ease-in-out 0.7s;
 }

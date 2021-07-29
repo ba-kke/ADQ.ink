@@ -36,6 +36,8 @@ header > .container{
   text-decoration: none;
   line-height: 4rem;
   font-weight: bold;
+  text-shadow: 2px 4px 2px #aaa;
+
 }
 
 .header-nav a::before {
