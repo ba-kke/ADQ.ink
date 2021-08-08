@@ -67,7 +67,7 @@
 .service-ttl {
   color: var(--font-color-1);
   display: inline;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 10rem;
   text-shadow: 2px 4px 2px var(--header-shadow);
 }
@@ -141,7 +141,7 @@
 
 .service .ttl {
   text-align: left;
-  font-size: min(2.5rem, 7vw);
+  font-size: min(2.2rem, 6vw);
   font-weight: 900;
   color: var(--font-color-1);
   padding-bottom: 2rem;
@@ -151,7 +151,7 @@
 
 .service .description {
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 900;
   line-height: 2;
   color: var(--font-color-1);

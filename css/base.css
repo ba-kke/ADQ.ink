@@ -7,10 +7,12 @@
   --main-color: rgb(200,45,35);
   --main-background-color: #fce2b1;
   --base-color: #fff;
-  font-size: 80.5%;
 }
 
-html { box-sizing: border-box; }
+html {
+  box-sizing: border-box;
+  font-size: 80.5%;
+}
 
 *, *:before, *:after { box-sizing: inherit; }
 
@@ -45,6 +47,6 @@ body {
 @media screen and (max-width:520px) {
 
   html {
-    font-size: 55%;
+    font-size: 40%;
   }
 }
